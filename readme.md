@@ -1,5 +1,5 @@
 # asciiart
-[![MATLAB Tests](https://github.com/YOUR-USERNAME/matlab-ascii-art/actions/workflows/ci.yml/badge.svg?branch=main)]([https://github.com/YOUR-USERNAME/matlab-ascii-art](https://github.com/ciiphersiren/matlab-ascii-art/actions/workflows/ci.yml)
+[![MATLAB Tests](https://github.com/ciiphersiren/matlab-ascii-art/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ciiphersiren/matlab-ascii-art/actions/workflows/ci.yml)
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ciiphersiren/matlab-ascii-art)
 [![View this on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://in.mathworks.com/matlabcentral/fileexchange/185076-ascii-art-generator)
 
