@@ -1,5 +1,6 @@
 # asciiart
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ciiphersiren/matlab-ascii-art)
+[![View this on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://in.mathworks.com/matlabcentral/fileexchange/185076-ascii-art-generator)
 
 Convert images to ASCII art in MATLAB, with color output, export to text/PNG/HTML, and an interactive app, using base MATLAB only.
 
