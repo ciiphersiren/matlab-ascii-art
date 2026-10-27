@@ -108,7 +108,7 @@ Why this approach:
 
 [examples/benchmark_blockmean.m](examples/benchmark_blockmean.m) times both with `timeit` from 256² to 4096² pixels (MATLAB Online, 50×100 output grid):
 
-![Benchmark: loop vs. vectorized block averaging](docs/benchmark.png)
+![Benchmark: loop vs. vectorized block averaging](benchmark.png)
 
 | Image size | Loop | Vectorized | Speedup |
 |---|---|---|---|
