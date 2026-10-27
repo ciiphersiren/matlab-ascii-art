@@ -77,6 +77,8 @@ asciiart/
 │   ├── demo_basic.m             Convert and display an image
 │   ├── demo_export.m            Save as TXT, PNG, and HTML
 │   └── benchmark_blockmean.m    Loop vs. vectorized timing plot
+├── benchmark.png            Benchmark plot used in this README
+├── demo.gif                 App screen capture used in this README
 └── README.md
 ```
 
