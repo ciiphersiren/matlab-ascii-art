@@ -1,4 +1,5 @@
 # asciiart
+[![MATLAB Tests](https://github.com/YOUR-USERNAME/matlab-ascii-art/actions/workflows/ci.yml/badge.svg?branch=main)]([https://github.com/YOUR-USERNAME/matlab-ascii-art](https://github.com/ciiphersiren/matlab-ascii-art/actions/workflows/ci.yml)
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ciiphersiren/matlab-ascii-art)
 [![View this on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://in.mathworks.com/matlabcentral/fileexchange/185076-ascii-art-generator)
 
@@ -198,4 +199,4 @@ Problems hit during development and how the code handles them. Each one is also 
 - **Font-aware charsets:** render each glyph, measure its ink coverage, and sort characters automatically for any font
 - **ANSI color output** for terminals, in addition to HTML
 - **Video and webcam** input, converting frame by frame
-- **Packaging** as a toolbox (`.mltbx`), with CI using MATLAB's GitHub Actions
+- **Packaging** as a toolbox (`.mltbx`)
