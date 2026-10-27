@@ -1,5 +1,6 @@
 # asciiart
 [![MATLAB Tests](https://github.com/ciiphersiren/matlab-ascii-art/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ciiphersiren/matlab-ascii-art/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/badge/coverage-97.9%25-brightgreen)](#running-the-tests)
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=ciiphersiren/matlab-ascii-art)
 [![View this on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://in.mathworks.com/matlabcentral/fileexchange/185076-ascii-art-generator)
 
@@ -17,7 +18,7 @@ Convert images to ASCII art in MATLAB, with color output, export to text/PNG/HTM
 - **Interactive app** (`AsciiArtApp`) with live preview, debounced updates, and image upload from your own computer, even in MATLAB Online
 - **Vectorized core**: block averaging with cumulative sums, benchmarked against a loop implementation
 - **No toolboxes**: no Image Processing Toolbox or any other add-on
-- **Tested**: `matlab.unittest` suites with parameterized tests and a code coverage report
+- **Tested**: 80 `matlab.unittest` tests, including parameterized tests, with 97.9% line coverage of `src/` checked in CI
 
 ## Quick Start
 
@@ -89,7 +90,8 @@ asciiart/
 run("tests/runAllTests.m")
 ```
 
-This runs every `*Test.m` class in `tests/`, prints a results table, and writes an HTML coverage report for `src/` (including `src/private`) to `coverage/index.html`. The script ends with `assertSuccess`, so it errors if any test fails and can be used in CI.
+This runs every `*Test.m` class in `tests/`, prints a results table, and writes an HTML coverage report for `src/` (including `src/private`) to `coverage/index.html`. The script ends with `assertSuccess`, so it errors if any test fails and can be used in CI. 
+GitHub Actions runs the suite on every push and pull request, on R2023a and the latest release. Line coverage of `src/` (including `src/private`) is currently 97.9%, and the build fails if it drops below 95%. Each run's coverage report can be downloaded from the run page under **Artifacts**.
 
 To run a single class:
 
