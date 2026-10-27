@@ -71,9 +71,6 @@ asciiart/
 │   ├── ExportTest.m             TXT and PNG export tests
 │   ├── ColorTest.m              Color mode and HTML tests
 │   └── runAllTests.m            Runs everything, prints a table, writes coverage
-├── docs/
-│   ├── benchmark.png            Benchmark plot used in this README
-│   └── demo.gif                 App screen capture used in this README
 ├── examples/
 │   ├── GettingStarted.m         Guided tour (open as Live Script)
 │   ├── demo_basic.m             Convert and display an image
