@@ -16,7 +16,7 @@ import matlab.unittest.plugins.codecoverage.CoberturaFormat
 
 % The script errors if line coverage of src/ falls below this percentage.
 % Set it a few points below the current value so small changes still pass.
-minCoverage = 80;
+minCoverage = 95;
 
 testsDir = fileparts(mfilename("fullpath"));
 if isempty(testsDir)
@@ -26,6 +26,12 @@ rootDir = fileparts(testsDir);
 srcDir = fullfile(rootDir, "src");
 reportDir = fullfile(rootDir, "coverage");
 coberturaFile = fullfile(reportDir, "coverage.xml");
+
+% CoberturaFormat needs its folder to exist already. coverage/ is not in
+% the repo, so it is missing in a fresh checkout.
+if ~isfolder(reportDir)
+    mkdir(reportDir);
+end
 
 % Collect *Test.m files only. TestSuite.fromFolder would also treat this
 % script as a script-based test and run it recursively.
@@ -41,6 +47,10 @@ try
         IncludingSubfolders=true, ...
         Producing=[CoverageReport(reportDir), CoberturaFormat(coberturaFile)]));
 catch err
+    % In CI, fail instead of silently skipping the coverage check
+    if getenv("CI") == "true"
+        rethrow(err);
+    end
     hasCoverage = false;
     warning("asciiart:tests:noCoverage", "Code coverage disabled: %s", err.message);
 end
